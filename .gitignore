@@ -1,0 +1,20 @@
+# --- Configurações de IDE ---
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# --- Arquivos de Build (Compilados) ---
+target/
+build/
+out/
+bin/
+
+# --- Arquivos de Sistema ---
+.DS_Store
+Thumbs.db
+
+# --- Logs e Temporários ---
+*.log
