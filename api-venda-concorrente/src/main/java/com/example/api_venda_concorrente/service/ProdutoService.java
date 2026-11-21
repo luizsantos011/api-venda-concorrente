@@ -21,7 +21,7 @@ public class ProdutoService {
                 .orElseThrow(() -> new IllegalArgumentException("Produto não encontrado"));
 
         if(produto.getQuantidadeEstoque() < quantidade) throw new IllegalStateException("Estoque insuficiente para a venda");
-        produto.setQuantidadeEstoque(produto.getQuantidadeEstoque() - 1);
+        produto.setQuantidadeEstoque(produto.getQuantidadeEstoque() - quantidade);
         repository.save(produto);
     }
 }

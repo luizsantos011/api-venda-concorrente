@@ -18,4 +18,9 @@ public class Produto {
     private Long id;
     private String nome;
     private Integer quantidadeEstoque;
+
+    public Produto(String nome, Integer quantidadeEstoque) {
+        this.nome = nome;
+        this.quantidadeEstoque = quantidadeEstoque;
+    }
 }
