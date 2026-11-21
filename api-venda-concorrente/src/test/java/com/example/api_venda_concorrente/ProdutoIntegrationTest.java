@@ -32,6 +32,7 @@ public class ProdutoIntegrationTest {
     @Test
     void deveImpedirVendaDuplicadaDoUltimoItem() throws InterruptedException {
         Produto produto = new Produto("PlayStation 5", 1);
+
         produto = repository.save(produto);
         Long produtoId = produto.getId();
 
